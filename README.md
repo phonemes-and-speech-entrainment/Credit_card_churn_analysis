@@ -107,22 +107,16 @@ The project was evaluated against its analytical, organisational and ethical obj
 
 ## Credits
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials; however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section into Content and Media, depending on what you include in your project. 
-
 ### Content 
 
-- The text for the Home page was taken from the Wikipedia Article A
-- Instructions on how to implement form validation were taken from a [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+* Dataset sourced from Kaggle: *Credit Card Customers* (BankChurners dataset).  
+* Code Institute learning materials and project templates serving as structural foundations.   
+* Code development, debugging, and structural ideation assisted by generative AI tools (ChatGPT Projects, Google Gemini Notebooks, and DeepSeek). 
 
 ### Media
 
-- The photos used on the home and sign-up page are from This Open-Source site
-- The images used for the gallery page were taken from this other open-source site
-
-
+* The Code Institute logo was used as per the project template.
 
 ## Acknowledgements (optional)
 
-* Thank the people who supported this project.
+* Special thanks to mentors, peers, and evaluators who provided feedback throughout the development of this analysis pipeline.

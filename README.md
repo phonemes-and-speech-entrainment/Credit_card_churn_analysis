@@ -52,14 +52,16 @@ The project was evaluated against its analytical, organisational and ethical obj
 
 ## The rationale to map the business requirements to the Data Visualisations
 
-* List your business requirements and a rationale for mapping them to the Data Visualisations
+* **Communicate actionable insights:** Develop an interactive dashboard to present key findings clearly and support evidence-based customer-retention strategies, while avoiding causal claims or assumptions about individual customers.
+* **Promote responsible interpretation:** Use visualisations and documentation to communicate uncertainty, analytical limitations and relevant ethical considerations.
 
 ## Analysis techniques used
 
-* List the data analysis methods used and explain limitations or alternative approaches.
-* How did you structure the data analysis techniques? Justify your response.
-* Did the data limit you, and did you use an alternative approach to meet these challenges?
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+* **ETL and data preparation:** Inspect, clean and reduce the dataset, addressing data quality issues and preparing variables for analysis; decisions may affect results and should be documented.
+* **EDA and statistical analysis:** Use descriptive statistics, grouped comparisons, distributions and correlation analysis to explore patterns and relationships; associations do not establish causation, and statistical tests require appropriate assumptions.
+* **Feature preparation and modelling:** Encode categorical variables and compare Logistic Regression, Random Forest and XGBoost Classifier. Evaluate performance using appropriate validation and metrics, including precision, recall, F1-score, ROC-AUC and the confusion matrix. Class imbalance, feature selection, multicollinearity and data leakage can affect reliability; alternative models and feature-engineering approaches may be explored where justified.
+* **Data limitations:** The analysis is constrained by the variables, quality and representativeness of the available dataset; findings may not generalise to other customers, banks or time periods, and missing context cannot be recovered through modelling alone.
+* **Generative AI assistance:** ChatGPT Projects, Google Gemini and DeepSeek supported ideation, code development, debugging and documentation across the ETL, EDA and modelling stages. AI-generated outputs require independent review, testing and validation; the project plan and workflow were devised and organised by the author.
 
 ## Ethical considerations
 
@@ -98,20 +100,6 @@ The project was evaluated against its analytical, organisational and ethical obj
 ## Deployment (optional)
 
 * If this is a Unit 3 Streamlit, Power BI or Tableau Public project, then you can include a link here and explain how you hosted the dashboard.
-
-### Heroku (optional)
-
-* This section is necessary only if you are deploying a Streamlit app to Heroku as part of your submission for units 2 and 3. 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
-* Set the `.python-version` Python version to a [Heroku-22](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
-
-1. Log in to Heroku and create an App
-2. From the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App at the top of the page to access your App.
-6. If the slug size is too large, then add large files not required for the app to the `.slugignore` file.
 
 ## Main Data Analysis Libraries
 

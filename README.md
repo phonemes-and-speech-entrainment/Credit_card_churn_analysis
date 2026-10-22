@@ -83,10 +83,10 @@ The project was evaluated against its analytical, organisational and ethical obj
 ### Planning
 
 * **Dashboard Strategy & Reduced Dataset Concept:** Rather than overloading users with the full multidimensional feature space, the planned dashboard focuses on creating a **second reduced dataset** specifically optimized for UI performance and storytelling. This subset aggregates high-impact behavioural flags (such as sudden drops in transaction counts, revolving balance thresholds, and inactivity months) paired with model risk probabilities.
-* **Ethical Focus in Visualization:** To prevent the dashboard from encouraging aggressive or invasive profiling, the design emphasizes aggregate customer segment trends rather than individual-level surveillance. Visual elements will explicitly highlight analytical uncertainty and caution against treating model scores as causal certainties.
+* **Ethical Focus in Visualization:** To prevent the dashboard from encouraging aggressive or invasive profiling, the design emphasises aggregate customer segment trends rather than individual-level surveillance. Visual elements will explicitly highlight analytical uncertainty and caution against treating model scores as causal certainties.
 * **Planned Layout & Components:**
   * *Overview Summary Cards:* Key metrics including overall churn rate (~16%), active customer counts, and average customer tenure.
-  * *Behavioral & Transactional Breakdown:* Interactive charts comparing `Total_Trans_Ct` and `Total_Trans_Amt` distributions between active and attrited cohorts.
+  * *Behavioural & Transactional Breakdown:* Interactive charts comparing `Total_Trans_Ct` and `Total_Trans_Amt` distributions between active and attrited cohorts.
   * *Risk & Feature Insight Panel:* Visual representation of top features selected via model tuning (e.g., revolving balances, contact frequency), paired with contextual tooltips explaining model limitations and ethical safeguards.
 
 ### Things to consider after publishing the dashboard 
@@ -98,13 +98,13 @@ The project was evaluated against its analytical, organisational and ethical obj
 
 ## Unfixed Bugs
 
-* Early iterations of model selection threw data-sparsity warnings when combining older pandas structures with `xgboost` integration; these were resolved by updating explicit type checks and utilizing compatible data matrix pipelines.
+* Early iterations of model selection threw data-sparsity warnings when combining older pandas structures with `xgboost` integration; these were resolved by updating explicit type checks and utilising compatible data matrix pipelines.
 
 * Gaps in understanding advanced feature selection (`SelectFromModel`) and hyperparameter tuning pipelines were addressed through iterative code testing and cross-referencing AI-assisted documentation.
 
 ## Development Roadmap
 
-* Encountered technical hurdles when attempting to bridge advanced machine learning concepts (such as automated hyperparameter optimization via `GridSearchCV` and embedded feature selection) with ethical constraints like model interpretability and bias mitigation.
+* Encountered technical hurdles when attempting to bridge advanced machine learning concepts (such as automated hyperparameter optimisation via `GridSearchCV` and embedded feature selection) with ethical constraints like model interpretability and bias mitigation.
 
 * Skills Learned & Future Goals: Strengthened technical proficiency in building robust scikit-learn pipelines, handling class imbalance with cost-sensitive tuning, and evaluating models using ROC-AUC and recall metrics. Future goals include mastering advanced model explainability frameworks to audit feature importances for fairness.
 
@@ -114,7 +114,15 @@ The project was evaluated against its analytical, organisational and ethical obj
 
 ## Main Data Analysis Libraries
 
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
+* **Pandas:** For data loading, cleaning, manipulation, and aggregation in DataFrames across the ETL and exploratory phases.
+* **NumPy:** For efficient numerical operations, mathematical functions, and array handling on tabular data structures.
+* **Matplotlib:** For creating foundational, customisable plots and visualising statistical distributions.
+* **Seaborn:** For generating high-level, aesthetically pleasing, and informative statistical graphics (such as countplots, histograms, and correlation maps).
+* **Scikit-learn (`sklearn`):** For implementing machine learning classification models (Logistic Regression, Random Forest, XGBoost), preprocessing tools (`StandardScaler`, `OneHotEncoder`), pipeline construction, automated model tuning (`GridSearchCV`), and embedded feature selection (`SelectFromModel`).
+* **XGBoost (`xgboost`):** For gradient-boosting classification and handling gradient optimisation on tabular customer data.
+* **Imbalanced-learn (`imblearn`):** For handling class imbalance via over-sampling techniques (`SMOTE`) and ensuring safe data resampling within cross-validation (`ImbPipeline`).
+* **OS:** For interacting with the operating system, managing file paths, and handling directory navigation across the project environment.
+* **Warnings:** For controlling and filtering runtime and deprecation warnings to maintain clean and reproducible notebook outputs.
 
 ## Credits
 

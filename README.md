@@ -32,9 +32,23 @@ This project explores customer attrition in the banking sector using the BankChu
 
 ## Project Plan
 
-* Outline the high-level steps taken for the analysis.
-* How was the data managed throughout the collection, processing, analysis and interpretation steps?
-* Why did you choose the research methodologies you used?
+The project plan was designed independently by the project author, who defined the main tasks and organised them in a GitHub Projects Kanban board. The board uses **Backlog, Ready, In Progress, In Review and Done** columns, with milestones, user stories and MoSCoW prioritisation (Must Have, Should Have, Could Have and Won't Have) to organise and prioritise the work. The 13 user stories provided a framework for the project, although the tasks were not completed in their original planned order and the workflow evolved as the analysis progressed.
+
+### Implementation
+
+The planned workflow covered project planning, data inspection and cleaning, initial identification of ethical concerns, exploratory data analysis (EDA), categorical encoding, statistical analysis, feature engineering, logistic regression modelling and performance evaluation, dashboard creation, a final ethics review and README documentation. The analytical work was developed with AI assistance across the main stages of a data analysis pipeline: ETL, EDA and predictive modelling, with Logistic Regression, Random Forest and XGBoost Classifier used to compare classification approaches. The dashboard is planned as a later stage. In retrospect, the project plan could have explicitly included the creation and organisation of separate Jupyter notebooks, clearer dependencies between tasks and dedicated testing and documentation activities.
+
+### Maintenance
+
+To keep the project reproducible and understandable, future maintenance should include keeping the repository organised, documenting data sources and processing decisions, recording software dependencies, and ensuring that code and notebooks can be rerun consistently. Changes to the dataset, analytical methods or modelling assumptions were documented in the repository's history (version control), while sensitive information, credentials and inappropriate disclosures were excluded from published files. If the models were ever used operationally, their performance, fairness and suitability would also need ongoing monitoring.
+
+### Updates
+
+The project was and can be updated by refining the analysis, reviewing the results of the different classification models, completing the interactive dashboard and incorporating the final ethical review into the documentation. Future changes should be recorded in the GitHub board and repository, with user stories, milestones and priorities revised as the scope develops. Any changes to data preparation, features, model settings or evaluation methods should be documented so that their impact on the findings can be assessed.
+
+### Evaluation
+
+The project was evaluated against its analytical, organisational and ethical objectives. This includes checking the accuracy and consistency of ETL outputs; assessing whether the EDA and statistical analyses address the stated hypotheses; evaluating model performance using appropriate validation procedures and metrics, including precision, recall, F1-score, ROC-AUC and the confusion matrix; and checking for data leakage, class imbalance and limitations in interpretation. The completed dashboard should be assessed for clarity, usability and whether its visualisations communicate the findings accurately. Finally, the README and ethical review should be checked for transparent documentation of AI assistance, responsible data use, relevant data protection considerations and limitations. The GitHub board provides a record of planned and completed work, while the evaluation findings can guide subsequent improvements.
 
 ## The rationale to map the business requirements to the Data Visualisations
 

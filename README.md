@@ -88,18 +88,19 @@ The project was evaluated against its analytical, organisational and ethical obj
 
 ## Unfixed Bugs
 
-* Please list any unfixed bugs and explain why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
-* Did you recognise gaps in your knowledge, and how did you address them?
-* If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
+* Early iterations of model selection threw data-sparsity warnings when combining older pandas structures with `xgboost` integration; these were resolved by updating explicit type checks and utilizing compatible data matrix pipelines.
+
+* Gaps in understanding advanced feature selection (`SelectFromModel`) and hyperparameter tuning pipelines were addressed through iterative code testing and cross-referencing AI-assisted documentation.
 
 ## Development Roadmap
 
-* What challenges did you face, and what strategies were used to overcome these challenges?
-* What new skills or tools do you plan to learn next based on your project experience? 
+* Encountered technical hurdles when attempting to bridge advanced machine learning concepts (such as automated hyperparameter optimization via `GridSearchCV` and embedded feature selection) with ethical constraints like model interpretability and bias mitigation.
+
+* Skills Learned & Future Goals: Strengthened technical proficiency in building robust scikit-learn pipelines, handling class imbalance with cost-sensitive tuning, and evaluating models using ROC-AUC and recall metrics. Future goals include mastering advanced model explainability frameworks to audit feature importances for fairness.
 
 ## Deployment (optional)
 
-* If this is a Unit 3 Streamlit, Power BI or Tableau Public project, then you can include a link here and explain how you hosted the dashboard.
+* *Placeholder for future Streamlit or dashboard hosting link once deployed.*
 
 ## Main Data Analysis Libraries
 

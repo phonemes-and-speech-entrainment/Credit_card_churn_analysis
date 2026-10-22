@@ -1,20 +1,34 @@
-# Project XYZ
+# Credit Card Churn Analysis
 
-**Project XYZ** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
+This project explores customer attrition in the banking sector using the BankChurners dataset from Kaggle, with the aim of understanding patterns associated with credit card churn and exploring how data analysis can support customer-retention strategies. Developed with the assistance of AI tools, including ChatGPT Projects, Google Gemini Notebooks and DeepSeek, the project follows an end-to-end Data Analytics pipeline encompassing Extract, Transform and Load (ETL), Exploratory Data Analysis (EDA) and predictive modelling, including comparisons between Logistic Regression, Random Forest and XGBoost Classifier. Beyond the technical analysis, the project aims to critically examine the ethical implications of customer profiling and predictive modelling, consider relevant data protection and GDPR principles, and responsibly document a project plan covering implementation, maintenance, future updates and evaluation. The final stage involves developing an interactive dashboard to communicate key findings through accessible visualisations and support evidence-based interpretation. Overall, the project combines practical analytical techniques with responsible AI use, ethical reflection and transparent documentation to demonstrate the stages, considerations and limitations involved in delivering a data analysis project.
 
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 ## Dataset Content
 
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's 100GB limit.
+* The project uses Kaggle’s BankChurners dataset, which originally contains 10,127 customer records and 23 columns; the ETL process produces a reduced dataset of 10,127 rows and 16 columns for exploring customer attrition, account characteristics, transaction behaviour and potential churn predictors.
 
 ## Business Requirements
 
-* Describe your business requirements
+* The project aims to identify customer characteristics and behaviours associated with credit card attrition and assess whether machine learning can distinguish existing customers from those who have left. The analysis should identify potentially useful patterns for customer-retention strategies, compare classification models using metrics beyond accuracy to account for class imbalance, and communicate findings through an interactive dashboard in the final project stage. Results should be interpreted responsibly, without treating associations as proof of causation or predictions as certain outcomes.
 
 ## Hypothesis and how to validate?
 
-* List here your project hypothesis(es) and how you envision validating it (them) 
+* **H1 — Inactivity and customer contact:** Customers who leave may have more inactive months and a different frequency of contact with the bank. Validate by comparing distributions and attrition rates across these variables in the EDA.
+
+* **H2 — Transaction behaviour:** Attrited customers may have lower transaction counts and transaction amounts than existing customers. Validate using group comparisons and visualisations of Total_Trans_Ct and Total_Trans_Amt.
+
+* **H3 — Customer relationships and account characteristics:** Attrition may vary with the number of products held, card category and account tenure. Validate by comparing attrition rates across Total_Relationship_Count, Card_Category and Months_on_book.
+
+* **H4 — Credit and financial behaviour:** Credit limits, revolving balances and average utilisation may differ between existing and attrited customers. Validate through grouped summaries, distributions and comparisons of Credit_Limit, Total_Revolving_Bal and Avg_Utilization_Ratio.
+
+* **H5 — Demographic and socioeconomic characteristics:** Attrition rates may vary across recorded demographic and socioeconomic categories. Explore differences by education, marital status, income category, age and gender, while considering missing or unknown categories and avoiding causal interpretations.
+
+* **H6 — Relationships between predictors:** Some explanatory variables may be correlated, creating redundancy or multicollinearity. Investigate correlation patterns and consider their implications for model interpretation and performance.
+
+* **H7 — Predictive performance:** Customer attrition can be predicted from the available customer and account features with performance better than a simple majority-class baseline. Evaluate Logistic Regression and Random Forest using a stratified train/test split, cross-validation and metrics including precision, recall, F1-score, ROC-AUC and the confusion matrix.
+
+* **H8 — XGBoost comparison:** Evaluate an XGBoost Classifier alongside Logistic Regression and Random Forest using consistent validation procedures and performance metrics to assess their relative predictive strengths and limitations.
 
 ## Project Plan
 
@@ -32,8 +46,6 @@
 * How did you structure the data analysis techniques? Justify your response.
 * Did the data limit you, and did you use an alternative approach to meet these challenges?
 * How did you use generative AI tools to help with ideation, design thinking and code optimisation?
-
-## Ethical considerations (optional)
 
 ## Ethical considerations
 

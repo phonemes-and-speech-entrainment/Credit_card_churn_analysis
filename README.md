@@ -16,11 +16,11 @@ This project explores customer attrition in the banking sector using the BankChu
 
 * **H1 — Inactivity and customer contact:** Customers who leave may have more inactive months and a different frequency of contact with the bank. Validate by comparing distributions and attrition rates across these variables in the EDA.
 
-* **H2 — Transaction behaviour:** Attrited customers may have lower transaction counts and transaction amounts than existing customers. Validate using group comparisons and visualisations of Total_Trans_Ct and Total_Trans_Amt.
+* **H2 — Transaction behaviour:** Attrited customers may have lower transaction counts and transaction amounts than existing customers. Validate using group comparisons and visualisations of `Total_Trans_Ct` and `Total_Trans_Amt`.
 
-* **H3 — Customer relationships and account characteristics:** Attrition may vary with the number of products held, card category and account tenure. Validate by comparing attrition rates across Total_Relationship_Count, Card_Category and Months_on_book.
+* **H3 — Customer relationships and account characteristics:** Attrition may vary with the number of products held, card category and account tenure. Validate by comparing attrition rates across `Total_Relationship_Count`, `Card_Category` and `Months_on_book`.
 
-* **H4 — Credit and financial behaviour:** Credit limits, revolving balances and average utilisation may differ between existing and attrited customers. Validate through grouped summaries, distributions and comparisons of Credit_Limit, Total_Revolving_Bal and Avg_Utilization_Ratio.
+* **H4 — Credit and financial behaviour:** Credit limits, revolving balances and average utilisation may differ between existing and attrited customers. Validate through grouped summaries, distributions and comparisons of `Credit_Limit`, `Total_Revolving_Bal` and `Avg_Utilization_Ratio`.
 
 * **H5 — Demographic and socioeconomic characteristics:** Attrition rates may vary across recorded demographic and socioeconomic categories. Explore differences by education, marital status, income category, age and gender, while considering missing or unknown categories and avoiding causal interpretations.
 

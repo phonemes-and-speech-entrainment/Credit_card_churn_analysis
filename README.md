@@ -1,75 +1,114 @@
+# Project XYZ
+
+**Project XYZ** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
+
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-## Template Instructions
+## Dataset Content
 
-Welcome,
+* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's 100GB limit.
 
-This is the Code Institute student template for the three Data Analytics capstone projects. We have preinstalled all of the tools you need to get started. It's perfectly okay to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
+## Business Requirements
 
-You can safely delete the Template Instructions section of this README.md file and modify the remaining paragraphs for your own project. Please do read the Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use.
+* Describe your business requirements
 
-If you are working on the first capstone project, you can also delete `.python-version`, `.slugignore`, `Procfile` and `setup.sh` as they are only required for later dashboard projects. 
+## Hypothesis and how to validate?
 
-## How to use this repo
+* List here your project hypothesis(es) and how you envision validating it (them) 
 
-1. Use this template to create your GitHub project repo. Click the **Use this template** button, then click **Create a new repository**.
+## Project Plan
 
-1. Copy the URL of your repository to your clipboard.
+* Outline the high-level steps taken for the analysis.
+* How was the data managed throughout the collection, processing, analysis and interpretation steps?
+* Why did you choose the research methodologies you used?
 
-1. In VS Code, select **File** -> **Open Folder**.
+## The rationale to map the business requirements to the Data Visualisations
 
-1. Select your `vscode-projects` folder, then click the **Select Folder** button on Windows, or the **Open** button on Mac.
+* List your business requirements and a rationale for mapping them to the Data Visualisations
 
-1. From the top menu in VS Code, select **Terminal** > **New Terminal** to open a new terminal.
+## Analysis techniques used
 
-1. In the terminal, type `git clone` followed by the URL of your GitHub repository. Then hit **Enter**. This command will download all the files in your GitHub repository into your vscode-projects folder.
+* List the data analysis methods used and explain limitations or alternative approaches.
+* How did you structure the data analysis techniques? Justify your response.
+* Did the data limit you, and did you use an alternative approach to meet these challenges?
+* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
 
-1. In VS Code, select **File** > **Open Folder** again.
+## Ethical considerations (optional)
 
-1. This time, navigate to and select the folder for the project you just downloaded. Then, click **Select Folder**.
+## Ethical considerations
 
-1. A virtual environment is necessary when working with Python projects to ensure each project's dependencies are kept separate. You need to create your virtual environment, also called a venv, and then activate it whenever you return to your workspace.
-Click the gear icon in the lower left-hand corner of the screen to open the Manage menu and select **Command Palette** to open the VS Code command palette.
+* **Public data is not permission for every use:** Although the BankChurners dataset is publicly available through Kaggle, its original collection context, provenance and licensing conditions may not be fully verifiable within this project. The analysis considers data minimisation, appropriate use of customer identifiers, data quality and responsible interpretation, but does not independently establish whether the original data collection had a lawful basis, whether informed consent was obtained, or whether the dataset is genuinely anonymous and free from historical bias. Public availability alone does not resolve these issues.
+* **Data protection and minimisation:** The project should use only the data necessary for its analytical purpose, exclude customer identifiers such as `CLIENTNUM` from predictive features, and avoid exposing personal or confidential information through datasets, visualisations or published outputs.
+* **GDPR and the limits of compliance claims:** Whether GDPR applies depends on whether individuals are identifiable and on the nature of the processing; any real-world use involving personal data would need a lawful basis, a defined purpose, appropriate security and retention controls, and respect for individuals’ rights.
+* **Data Protection Impact Assessment (DPIA):** A formal DPIA is not automatically required for this educational project, but a bank considering large-scale customer profiling or automated decisions with significant effects should assess whether one is legally required, document risks to individuals and introduce proportionate safeguards before deployment.
+* **Bias, fairness and financial vulnerability:** Churn models may reproduce historical inequalities or rely on proxy variables, potentially leading to some customer groups receiving less favourable treatment; model performance and error rates should therefore be examined across relevant groups where suitable data and lawful methods are available.
+* **Predictions can affect real people:** A churn prediction is uncertain, not a statement of fact about a customer; if used operationally, false predictions could trigger unwanted marketing, inappropriate retention offers or unfair treatment, so consequential decisions should not be delegated to a model without appropriate human oversight.
+* **Responsible modelling and interpretation:** The project compares Logistic Regression, Random Forest and XGBoost Classifier models using appropriate validation and performance measures, while recognising class imbalance, potential data leakage, model limitations and the distinction between predictive associations and causal explanations.
+* **Transparency and explainability:** Model performance alone does not establish that a system is fair or suitable for use; any practical deployment should make its purpose, limitations and decision process understandable to relevant stakeholders and provide a way to review or challenge consequential outcomes.
+* **AI-assisted development and accountability:** The Jupyter notebooks in this repository were developed with assistance from ChatGPT Projects, Google Gemini and DeepSeek; AI-generated code, analysis and explanations can be incorrect or biased, so outputs must be checked, tested and reproducible, and responsibility for the submitted work remains with the project author.
+* **Privacy when sharing work with AI services:** Uploading datasets, notebooks or code to external AI tools can expose personal data, confidential information, credentials or material subject to licensing restrictions; only information that is appropriate and authorised to share should be submitted, taking account of each service’s data-handling terms and settings.
+* **Academic integrity, attribution and ownership:** AI assistance should be disclosed transparently in line with course requirements, and external code, datasets and other materials should be attributed appropriately; generated content should not be assumed to be original, factually correct or free of third-party rights.
+* **Responsible publication and maintenance:** Before sharing the repository or deploying the dashboard, check for sensitive data, secrets, licensing issues and misleading disclosures; any operational model would also need appropriate access controls, ongoing performance and fairness monitoring, and documented updates as customer behaviour and data change.
 
-1. In the command palette, type: *create environment* and select **Python: Create Environment…**
+## Dashboard Design (optional)
 
-1. Choose **Venv** from the dropdown list.
+* Feel free to delete this section if this is a data visualisation only (unit 1 or 2) project submission.
+* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
+* Later, during project development, you may revisit your dashboard plan to update a feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later you used another plot type).
+* How were data insights communicated to technical and non-technical audiences?
+* Explain how the dashboard was designed to communicate complex data insights to different audiences. 
 
-1. Choose the Python version you installed earlier. Currently, we recommend Python 3.12.8
+## Unfixed Bugs
 
-1. **DO NOT** click the box next to `requirements.txt`; you need to complete additional steps before installing your dependencies. Click **OK**.
+* Please list any unfixed bugs and explain why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
+* Did you recognise gaps in your knowledge, and how did you address them?
+* If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
 
-1. You will see a `.venv` folder appear in the file explorer pane, indicating that the virtual environment has been created.
+## Development Roadmap
 
-1. **Important**: Note that the `.venv` folder is in the `.gitignore` file so that Git won't track it.
+* What challenges did you face, and what strategies were used to overcome these challenges?
+* What new skills or tools do you plan to learn next based on your project experience? 
 
-1. Return to the terminal by clicking on the TERMINAL tab, or click on the **Terminal** menu and choose **New Terminal** if no terminal is currently open.
+## Deployment (optional)
 
-1. In the terminal, use the command below to install your dependencies. This may take several minutes.
+* If this is a Unit 3 Streamlit, Power BI or Tableau Public project, then you can include a link here and explain how you hosted the dashboard.
 
- ```console
- pip3 install -r requirements.txt
- ```
+### Heroku (optional)
 
-1. Open the `jupyter_notebooks` directory, and click on the notebook you want to open.
-
-1. Click the **Kernel** button, then choose **Python Environments**.
-
-Note that the kernel says `Python 3.12.8` as it inherits from the venv, so it will be Python-3.12.8 if that is what is installed on your PC. To confirm this, you can use the command below in a notebook code cell.
-
-```console
-! python --version
-```
-
-## Deployment Reminders
-
-* The `.python-version`, `.slugignore`, `Procfile` and `setup.sh` files are necessary only if you are deploying a Streamlit app to Heroku as part of your submission for units 2 and 3. 
-* Set the `.python-version` Python version to a [Heroku-22](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack, currently supported version that most closely matches what you used in this project.
-* The project can be deployed to Heroku using the following steps.
+* This section is necessary only if you are deploying a Streamlit app to Heroku as part of your submission for units 2 and 3. 
+* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
+* Set the `.python-version` Python version to a [Heroku-22](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
+* The project was deployed to Heroku using the following steps.
 
 1. Log in to Heroku and create an App
-2. At the **Deploy** tab, select **GitHub** as the deployment method.
-3. Select your repository name and click **Search**. Once it is found, click **Connect**.
-4. Select the branch you want to deploy, then click **Deploy Branch**.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button **Open App** at the top of the page to access your App.
+2. From the Deploy tab, select GitHub as the deployment method.
+3. Select your repository name and click Search. Once it is found, click Connect.
+4. Select the branch you want to deploy, then click Deploy Branch.
+5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App at the top of the page to access your App.
 6. If the slug size is too large, then add large files not required for the app to the `.slugignore` file.
+
+## Main Data Analysis Libraries
+
+* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
+
+## Credits
+
+* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials; however, it is important to be very specific about these sources to avoid plagiarism. 
+* You can break the credits section into Content and Media, depending on what you include in your project. 
+
+### Content 
+
+- The text for the Home page was taken from the Wikipedia Article A
+- Instructions on how to implement form validation were taken from a [Specific YouTube Tutorial](https://www.youtube.com/)
+- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+
+### Media
+
+- The photos used on the home and sign-up page are from This Open-Source site
+- The images used for the gallery page were taken from this other open-source site
+
+
+
+## Acknowledgements (optional)
+
+* Thank the people who supported this project.

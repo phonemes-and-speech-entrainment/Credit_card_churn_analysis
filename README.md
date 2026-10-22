@@ -78,9 +78,19 @@ The project was evaluated against its analytical, organisational and ethical obj
 * **Academic integrity, attribution and ownership:** AI assistance and external data sources are fully disclosed in accordance with academic standards.
 * **Responsible publication and maintenance:** Repositories are vetted to ensure no secrets, sensitive data, or unverified claims are published prior to sharing or deployment.
 
-## Dashboard Design (optional)
+## Dashboard Design 
 
-* Feel free to delete this section if this is a data visualisation only (unit 1 or 2) project submission.
+### Planning
+
+* **Dashboard Strategy & Reduced Dataset Concept:** Rather than overloading users with the full multidimensional feature space, the planned dashboard focuses on creating a **second reduced dataset** specifically optimized for UI performance and storytelling. This subset aggregates high-impact behavioural flags (such as sudden drops in transaction counts, revolving balance thresholds, and inactivity months) paired with model risk probabilities.
+* **Ethical Focus in Visualization:** To prevent the dashboard from encouraging aggressive or invasive profiling, the design emphasizes aggregate customer segment trends rather than individual-level surveillance. Visual elements will explicitly highlight analytical uncertainty and caution against treating model scores as causal certainties.
+* **Planned Layout & Components:**
+  * *Overview Summary Cards:* Key metrics including overall churn rate (~16%), active customer counts, and average customer tenure.
+  * *Behavioral & Transactional Breakdown:* Interactive charts comparing `Total_Trans_Ct` and `Total_Trans_Amt` distributions between active and attrited cohorts.
+  * *Risk & Feature Insight Panel:* Visual representation of top features selected via model tuning (e.g., revolving balances, contact frequency), paired with contextual tooltips explaining model limitations and ethical safeguards.
+
+### Things to consider after publishing the dashboard 
+
 * List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
 * Later, during project development, you may revisit your dashboard plan to update a feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later you used another plot type).
 * How were data insights communicated to technical and non-technical audiences?

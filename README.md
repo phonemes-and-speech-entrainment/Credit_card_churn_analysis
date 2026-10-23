@@ -6,7 +6,7 @@ This project explores customer attrition in the banking sector using the BankChu
 
 ## Dataset Content
 
-* The project uses Kaggle’s BankChurners dataset, which originally contains 10,127 customer records and 23 columns; the ETL process produced a reduced dataset of 10,127 rows and 16 columns for exploring customer attrition, account characteristics, transaction behaviour and potential churn predictors.
+* The project uses [Kaggle’s BankChurners dataset](https://www.kaggle.com/datasets/sakshigoyal7/credit-card-customers), which originally contains 10,127 customer records and 23 columns; the ETL process produced a reduced dataset of 10,127 rows and 16 columns for exploring customer attrition, account characteristics, transaction behaviour and potential churn predictors.
 
 ## Business Requirements
 

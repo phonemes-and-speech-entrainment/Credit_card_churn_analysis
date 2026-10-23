@@ -6,29 +6,29 @@ This project explores customer attrition in the banking sector using the BankChu
 
 ## Dataset Content
 
-* The project uses Kaggle’s BankChurners dataset, which originally contains 10,127 customer records and 23 columns; the ETL process produces a reduced dataset of 10,127 rows and 16 columns for exploring customer attrition, account characteristics, transaction behaviour and potential churn predictors.
+* The project uses Kaggle’s BankChurners dataset, which originally contains 10,127 customer records and 23 columns; the ETL process produced a reduced dataset of 10,127 rows and 16 columns for exploring customer attrition, account characteristics, transaction behaviour and potential churn predictors.
 
 ## Business Requirements
 
-* The project aims to identify customer characteristics and behaviours associated with credit card attrition and assess whether machine learning can distinguish existing customers from those who have left. The analysis should identify potentially useful patterns for customer-retention strategies, compare classification models using metrics beyond accuracy to account for class imbalance, and communicate findings through an interactive dashboard in the final project stage. Results should be interpreted responsibly, without treating associations as proof of causation or predictions as certain outcomes.
+* The project aimed to identify customer characteristics and behaviours associated with credit card attrition and assess whether machine learning can distinguish existing customers from those who have left. The analysis identified potentially useful patterns for customer-retention strategies, compared classification models using metrics beyond accuracy to account for class imbalance, and communicated findings through an interactive dashboard in the final project stage. Results are interpreted responsibly, without treating associations as proof of causation or predictions as certain outcomes.
 
 ## Hypothesis and how to validate?
 
-* **H1 — Inactivity and customer contact:** Customers who leave may have more inactive months and a different frequency of contact with the bank. Validate by comparing distributions and attrition rates across these variables in the EDA.
+* **H1 — Inactivity and customer contact:** Customers who leave may have more inactive months and a different frequency of contact with the bank. Validated by comparing distributions and attrition rates across these variables in the EDA.
 
-* **H2 — Transaction behaviour:** Attrited customers may have lower transaction counts and transaction amounts than existing customers. Validate using group comparisons and visualisations of `Total_Trans_Ct` and `Total_Trans_Amt`.
+* **H2 — Transaction behaviour:** Attrited customers may have lower transaction counts and transaction amounts than existing customers. Validated using group comparisons and visualisations of `Total_Trans_Ct` and `Total_Trans_Amt`.
 
-* **H3 — Customer relationships and account characteristics:** Attrition may vary with the number of products held, card category and account tenure. Validate by comparing attrition rates across `Total_Relationship_Count`, `Card_Category` and `Months_on_book`.
+* **H3 — Customer relationships and account characteristics:** Attrition may vary with the number of products held, card category and account tenure. Validated by comparing attrition rates across `Total_Relationship_Count`, `Card_Category` and `Months_on_book`.
 
-* **H4 — Credit and financial behaviour:** Credit limits, revolving balances and average utilisation may differ between existing and attrited customers. Validate through grouped summaries, distributions and comparisons of `Credit_Limit`, `Total_Revolving_Bal` and `Avg_Utilization_Ratio`.
+* **H4 — Credit and financial behaviour:** Credit limits, revolving balances and average utilisation may differ between existing and attrited customers. Validated through grouped summaries, distributions and comparisons of `Credit_Limit`, `Total_Revolving_Bal` and `Avg_Utilization_Ratio`.
 
-* **H5 — Demographic and socioeconomic characteristics:** Attrition rates may vary across recorded demographic and socioeconomic categories. Explore differences by education, marital status, income category, age and gender, while considering missing or unknown categories and avoiding causal interpretations.
+* **H5 — Demographic and socioeconomic characteristics:** Attrition rates may vary across recorded demographic and socioeconomic categories. Explored differences by education, marital status, income category, age and gender, while considering missing or unknown categories and avoiding causal interpretations.
 
-* **H6 — Relationships between predictors:** Some explanatory variables may be correlated, creating redundancy or multicollinearity. Investigate correlation patterns and consider their implications for model interpretation and performance.
+* **H6 — Relationships between predictors:** Some explanatory variables may be correlated, creating redundancy or multicollinearity. Investigated correlation patterns and considered their implications for model interpretation and performance.
 
-* **H7 — Predictive performance:** Customer attrition can be predicted from the available customer and account features with performance better than a simple majority-class baseline. Evaluate Logistic Regression and Random Forest using a stratified train/test split, cross-validation and metrics including precision, recall, F1-score, ROC-AUC and the confusion matrix.
+* **H7 — Predictive performance:** Customer attrition can be predicted from the available customer and account features with performance better than a simple majority-class baseline. Evaluated Logistic Regression and Random Forest using a stratified train/test split, cross-validation and metrics including precision, recall, F1-score, ROC-AUC and the confusion matrix.
 
-* **H8 — XGBoost comparison:** Evaluate an XGBoost Classifier alongside Logistic Regression and Random Forest using consistent validation procedures and performance metrics to assess their relative predictive strengths and limitations.
+* **H8 — XGBoost comparison:** Evaluated an XGBoost Classifier alongside Logistic Regression and Random Forest using consistent validation procedures and performance metrics to assess their relative predictive strengths and limitations.
 
 ## Project Plan
 
@@ -36,7 +36,7 @@ The project plan was designed independently by the project author, who defined t
 
 ### Implementation
 
-The planned workflow covered project planning, data inspection and cleaning, initial identification of ethical concerns, exploratory data analysis (EDA), categorical encoding, statistical analysis, feature engineering, logistic regression modelling and performance evaluation, dashboard creation, a final ethics review and README documentation. The analytical work was developed with AI assistance across the main stages of a data analysis pipeline: ETL, EDA and predictive modelling, with Logistic Regression, Random Forest and XGBoost Classifier used to compare classification approaches. The dashboard was planned as a later stage. In retrospect, the project plan could have explicitly included the creation and organisation of separate Jupyter notebooks, clearer dependencies between tasks and dedicated testing and documentation activities.
+The planned workflow covered project planning, data inspection and cleaning, initial identification of ethical concerns, exploratory data analysis (EDA), categorical encoding, statistical analysis, feature engineering, logistic regression modelling and performance evaluation, dashboard creation, a final ethics review and README documentation. The analytical work was developed with AI assistance across the main stages of a data analysis pipeline: ETL, EDA and predictive modelling, with Logistic Regression, Random Forest and XGBoost Classifier used to compare classification approaches. The dashboard was completed as a later stage. In retrospect, the project plan could have explicitly included the creation and organisation of separate Jupyter notebooks, clearer dependencies between tasks and dedicated testing and documentation activities.
 
 ### Maintenance
 
@@ -48,7 +48,7 @@ The project was and can be updated by refining the analysis, reviewing the resul
 
 ### Evaluation
 
-The project was evaluated against its analytical, organisational and ethical objectives. This includes checking the accuracy and consistency of ETL outputs; assessing whether the EDA and statistical analyses address the stated hypotheses; evaluating model performance using appropriate validation procedures and metrics, including precision, recall, F1-score, ROC-AUC and the confusion matrix; and checking for data leakage, class imbalance and limitations in interpretation. The completed dashboard should be assessed for clarity, usability and whether its visualisations communicate the findings accurately. Finally, the README and ethical review should be checked for transparent documentation of AI assistance, responsible data use, relevant data protection considerations and limitations. The GitHub board provides a record of planned and completed work, while the evaluation findings can guide subsequent improvements.
+The project was evaluated against its analytical, organisational and ethical objectives. This includes checking the accuracy and consistency of ETL outputs; assessing whether the EDA and statistical analyses address the stated hypotheses; evaluating model performance using appropriate validation procedures and metrics, including precision, recall, F1-score, ROC-AUC and the confusion matrix; and checking for data leakage, class imbalance and limitations in interpretation. The completed dashboard was assessed for clarity, usability and whether its visualisations communicate the findings accurately. Finally, the README and ethical review were checked for transparent documentation of AI assistance, responsible data use, relevant data protection considerations and limitations. The GitHub board provides a record of planned and completed work, while the evaluation findings can guide subsequent improvements.
 
 ## The rationale to map the business requirements to the Data Visualisations
 
@@ -71,7 +71,7 @@ The project was evaluated against its analytical, organisational and ethical obj
 * **Data Protection Impact Assessment (DPIA):** While a formal DPIA is not automatically mandatory for this educational project, a financial institution implementing large-scale profiling or automated decisions must assess legal obligations and introduce safeguards before deployment.
 * **Bias, fairness and financial vulnerability:** Churn models may reproduce historical inequalities or rely on proxy variables, potentially leading to disparate impact or unfair treatment across demographic subgroups; model performance and error rates should therefore be examined across relevant groups where suitable data and lawful methods are available.
 * **Predictions can affect real people:** A churn prediction is uncertain, not a statement of fact about a customer; if used operationally, false predictions could trigger unwanted marketing, inappropriate retention offers or unfair treatment, so consequential decisions should not be delegated to a model without appropriate human oversight.
-* **Responsible modelling and interpretation:** Balancing algorithms to handle class imbalance responsibly ensures metrics like recall are prioritized so that high-risk churners are not overlooked.
+* **Responsible modelling and interpretation:** Balancing algorithms to handle class imbalance responsibly ensures metrics like recall are prioritised so that high-risk churners are not overlooked.
 * **Transparency and explainability:** Model performance alone does not establish that a system is fair or suitable for use; any practical deployment should make its purpose, limitations and decision process understandable to relevant stakeholders and provide a way to review or challenge consequential outcomes.
 * **AI-assisted development and accountability:** Because tools like ChatGPT, Gemini, and DeepSeek were used to write code, all outputs were independently tested and verified, maintaining full author accountability.
 * **Privacy when sharing work with AI services:** Uploading datasets, notebooks or code to external AI tools can expose personal data, confidential information, credentials or material subject to licensing restrictions. Care was taken to avoid exposing sensitive credentials or proprietary personal information to third-party AI platforms.
@@ -82,8 +82,8 @@ The project was evaluated against its analytical, organisational and ethical obj
 
 ### Planning
 
-- **Dashboard Strategy & Reduced Dataset Concept:** Rather than overloading users with the full multidimensional feature space, the planned dashboard focuses on creating a **second reduced dataset** specifically optimized for UI performance and storytelling. This subset aggregates high-impact behavioural flags (such as sudden drops in transaction counts, revolving balance thresholds, and inactivity months) paired with model risk probabilities.
-- **Ethical Focus in Visualization:** To prevent the dashboard from encouraging aggressive or invasive profiling, the design emphasises aggregate customer segment trends rather than individual-level surveillance. Visual elements will explicitly highlight analytical uncertainty and caution against treating model scores as causal certainties.
+- **Dashboard Strategy & Reduced Dataset Concept:** Rather than overloading users with the full multidimensional feature space, the planned dashboard focused on creating a **second reduced dataset** specifically optimized for UI performance and storytelling. This subset aggregates high-impact behavioural flags (such as sudden drops in transaction counts, revolving balance thresholds, and inactivity months) paired with model risk probabilities.
+- **Ethical Focus in Visualization:** To prevent the dashboard from encouraging aggressive or invasive profiling, the design emphasises aggregate customer segment trends rather than individual-level surveillance. Visual elements explicitly highlight analytical uncertainty and caution against treating model scores as causal certainties.
 - **Planned Layout & Components:**
   - *Overview Summary Cards:* Key metrics including overall churn rate (~16%), active customer counts, and average customer tenure.
   - *Behavioural & Transactional Breakdown:* Interactive charts comparing `Total_Trans_Ct` and `Total_Trans_Amt` distributions between active and attrited cohorts.
@@ -117,7 +117,7 @@ The project was evaluated against its analytical, organisational and ethical obj
 
 ## Deployment 
 
-* The Tableau dashboard was deployed using Tableau Public and can be viewed online by accessing the following [link](https://public.tableau.com/views/Credit_Card_Fairness_Analysis/Credit_Card_Dashboard?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+* The Tableau dashboard was deployed using Tableau Public and can be viewed online by accessing the following [link](https://public.tableau.com/views/Credit_Card_Fairness_Analysis/Credit_Card_Dashboard?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
 
 ## Main Data Analysis Libraries
 

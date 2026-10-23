@@ -108,9 +108,9 @@ The project was evaluated against its analytical, organisational and ethical obj
 
 * Skills Learned & Future Goals: Strengthened technical proficiency in building robust scikit-learn pipelines, handling class imbalance with cost-sensitive tuning, and evaluating models using ROC-AUC and recall metrics. Future goals include mastering advanced model explainability frameworks to audit feature importances for fairness.
 
-## Deployment (optional)
+## Deployment 
 
-* *Placeholder for future Streamlit or dashboard hosting link once deployed.*
+* The Tableau dashboard was deployed using Tableau Public and can be viewed online by accessing the following [link](https://public.tableau.com/views/Credit_Card_Fairness_Analysis/Credit_Card_Dashboard?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ## Main Data Analysis Libraries
 

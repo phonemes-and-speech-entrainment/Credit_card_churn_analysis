@@ -36,7 +36,7 @@ The project plan was designed independently by the project author, who defined t
 
 ### Implementation
 
-The planned workflow covered project planning, data inspection and cleaning, initial identification of ethical concerns, exploratory data analysis (EDA), categorical encoding, statistical analysis, feature engineering, logistic regression modelling and performance evaluation, dashboard creation, a final ethics review and README documentation. The analytical work was developed with AI assistance across the main stages of a data analysis pipeline: ETL, EDA and predictive modelling, with Logistic Regression, Random Forest and XGBoost Classifier used to compare classification approaches. The dashboard is planned as a later stage. In retrospect, the project plan could have explicitly included the creation and organisation of separate Jupyter notebooks, clearer dependencies between tasks and dedicated testing and documentation activities.
+The planned workflow covered project planning, data inspection and cleaning, initial identification of ethical concerns, exploratory data analysis (EDA), categorical encoding, statistical analysis, feature engineering, logistic regression modelling and performance evaluation, dashboard creation, a final ethics review and README documentation. The analytical work was developed with AI assistance across the main stages of a data analysis pipeline: ETL, EDA and predictive modelling, with Logistic Regression, Random Forest and XGBoost Classifier used to compare classification approaches. The dashboard was planned as a later stage. In retrospect, the project plan could have explicitly included the creation and organisation of separate Jupyter notebooks, clearer dependencies between tasks and dedicated testing and documentation activities.
 
 ### Maintenance
 
@@ -82,19 +82,26 @@ The project was evaluated against its analytical, organisational and ethical obj
 
 ### Planning
 
-* **Dashboard Strategy & Reduced Dataset Concept:** Rather than overloading users with the full multidimensional feature space, the planned dashboard focuses on creating a **second reduced dataset** specifically optimized for UI performance and storytelling. This subset aggregates high-impact behavioural flags (such as sudden drops in transaction counts, revolving balance thresholds, and inactivity months) paired with model risk probabilities.
-* **Ethical Focus in Visualization:** To prevent the dashboard from encouraging aggressive or invasive profiling, the design emphasises aggregate customer segment trends rather than individual-level surveillance. Visual elements will explicitly highlight analytical uncertainty and caution against treating model scores as causal certainties.
-* **Planned Layout & Components:**
-  * *Overview Summary Cards:* Key metrics including overall churn rate (~16%), active customer counts, and average customer tenure.
-  * *Behavioural & Transactional Breakdown:* Interactive charts comparing `Total_Trans_Ct` and `Total_Trans_Amt` distributions between active and attrited cohorts.
-  * *Risk & Feature Insight Panel:* Visual representation of top features selected via model tuning (e.g., revolving balances, contact frequency), paired with contextual tooltips explaining model limitations and ethical safeguards.
+- **Dashboard Strategy & Reduced Dataset Concept:** Rather than overloading users with the full multidimensional feature space, the planned dashboard focuses on creating a **second reduced dataset** specifically optimized for UI performance and storytelling. This subset aggregates high-impact behavioural flags (such as sudden drops in transaction counts, revolving balance thresholds, and inactivity months) paired with model risk probabilities.
+- **Ethical Focus in Visualization:** To prevent the dashboard from encouraging aggressive or invasive profiling, the design emphasises aggregate customer segment trends rather than individual-level surveillance. Visual elements will explicitly highlight analytical uncertainty and caution against treating model scores as causal certainties.
+- **Planned Layout & Components:**
+  - *Overview Summary Cards:* Key metrics including overall churn rate (~16%), active customer counts, and average customer tenure.
+  - *Behavioural & Transactional Breakdown:* Interactive charts comparing `Total_Trans_Ct` and `Total_Trans_Amt` distributions between active and attrited cohorts.
+  - *Risk & Feature Insight Panel:* Visual representation of top features selected via model tuning (e.g., revolving balances, contact frequency), paired with contextual tooltips explaining model limitations and ethical safeguards.
 
-### Things to consider after publishing the dashboard 
+### Implementation & Adaptation: How the Created Dashboard Differs from the Plan
 
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during project development, you may revisit your dashboard plan to update a feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later you used another plot type).
-* How were data insights communicated to technical and non-technical audiences?
-* Explain how the dashboard was designed to communicate complex data insights to different audiences. 
+- **Shift to Interactive Multi-Dimensional Filters & Demographic Audits:** While the initial plan focused primarily on core transaction distributions and feature risk panels, the actual Tableau Public implementation expanded to include comprehensive global filters (`Card_Category`, `Marital_Status`, `Income_Category`, and `Education_Level`) and explicit demographic/socioeconomic auditing plots.
+- **New Visual Elements Added for Fairness & Equity:** 
+  - *Income & Credit Limit Fairness (`credit limit: income x attrition`):* Examines whether credit allocation is equitably distributed relative to income, or if lower-income brackets face systemic limits or higher vulnerability.
+  - *Socioeconomic & Educational Interaction (`attrited customers: income x education`):* Breaks down churn patterns across crossing income and education brackets, addressing data quality gaps such as explicit "Unknown" categories.
+  - *Demographic Compliance (`gender x attrition`):* Reconfigured into a clean horizontal 100% stacked bar chart to audit gender equity and prevent disparate impact.
+- **Integration of an Ethics & Data Governance Disclaimer:** Added a dedicated structural text container outlining model limitations, non-causal interpretations, and protections against invasive customer profiling.
+
+### Communication to Technical and Non-Technical Audiences
+
+- **Layered Visual Design:** Complex machine learning findings and model drivers are translated into intuitive, high-impact visual comparisons (such as transaction cuts and demographic ratios) that are easily grasped by business stakeholders and non-technical viewers.
+- **Contextual Transparency:** Tooltips, categorical filter controls, and an explicit ethics disclaimer ensure that technical metrics (like attrition probabilities) are contextualized responsibly, framing outputs as aggregate behavioral tendencies rather than deterministic individual predictions.
 
 ## Unfixed Bugs
 
